@@ -104,7 +104,7 @@ export default {
       importScripts: [
         '/firebase-auth-sw.js'
       ],
-      dev: true
+      dev: false
     },
     manifest: {
       name: 'Nuxt Firebase',
