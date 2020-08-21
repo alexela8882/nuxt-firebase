@@ -8,7 +8,7 @@
               Please login
             </v-toolbar-title>
             <v-spacer></v-spacer>
-            <v-img width="40" height="30" src="/nuxtjs_logo.png"></v-img>
+            <v-img width="40" height="30" src="~/assets/nuxtjs_logo.png"></v-img>
           </v-toolbar>
           <v-card-text>
             <v-form :disabled="loading" @submit.prevent>

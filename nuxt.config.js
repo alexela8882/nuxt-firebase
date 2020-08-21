@@ -102,7 +102,7 @@ export default {
     },
     workbox: {
       importScripts: [
-        '/firebase-auth-sw.js'
+        '~/assets/firebase-auth-sw.js'
       ],
       dev: false
     },
