@@ -10,7 +10,10 @@ export default {
   ** Nuxt target
   ** See https://nuxtjs.org/api/configuration-target
   */
-  target: 'server',
+  target: 'static',
+  router: {
+    base: '/nuxt-firebase/'
+  },
   // server: {
   //   port: 3000, // default: 3000
   //   host: '10.50.11.12' // default: localhost
