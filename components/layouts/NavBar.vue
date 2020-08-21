@@ -15,7 +15,7 @@
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title class="title">
-              USER HERE
+              {{ userEmail }}
             </v-list-item-title>
             <v-list-item-subtitle>Full Stack Web Developer</v-list-item-subtitle>
           </v-list-item-content>
@@ -110,7 +110,7 @@
                   </v-list-item-avatar>
                   <v-list-item-content>
                     <v-list-item-title class="title">
-                      USER HERE
+                      {{ userEmail }}
                     </v-list-item-title>
                     <v-list-item-subtitle>
                       Full Stack Web Developer
