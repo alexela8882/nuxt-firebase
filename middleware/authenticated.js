@@ -3,5 +3,5 @@ export default function ({ store, redirect, res }) {
     const { allClaims: claims, idToken: token, ...authUser } = res.locals.user
     store.commit('ON_AUTH_STATE_CHANGED_MUTATION', { authUser, claims, token })
   }
-  if (res && !res.locals.user) return redirect('/login')
+  if (res && !res.locals) return redirect('/login')
 }
