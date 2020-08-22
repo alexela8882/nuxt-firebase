@@ -11,9 +11,9 @@ export default {
   ** See https://nuxtjs.org/api/configuration-target
   */
   target: 'server',
-  router: {
-    base: '/nuxt-firebase/'
-  },
+  // router: {
+  //   base: '/nuxt-firebase/'
+  // },
   // server: {
   //   port: 3000, // default: 3000
   //   host: '10.50.11.12' // default: localhost
@@ -102,7 +102,7 @@ export default {
     },
     workbox: {
       importScripts: [
-        '~/assets/firebase-auth-sw.js'
+        '/firebase-auth-sw.js'
       ],
       dev: false
     },
