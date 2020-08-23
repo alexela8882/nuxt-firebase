@@ -24,7 +24,9 @@
                 prepend-icon="lock"
                 v-model="password"
                 label="Password"
-                type="password"
+                :type="viewPassword ? 'text' : 'password'"
+                :append-icon="viewPassword ? 'mdi-eye' : 'mdi-eye-off'"
+                @click:append="viewPassword = !viewPassword"
                 @keydown.enter="login"
               ></v-text-field>
             </v-form>
@@ -67,8 +69,9 @@ export default {
 
   asyncData () {
     return {
-      email: null,
-      password: null,
+      email: 'alexela8882@gmail.com',
+      password: '123$qweR',
+      viewPassword: false,
     }
   },
 
